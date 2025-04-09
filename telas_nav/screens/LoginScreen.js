@@ -11,3 +11,5 @@ const LoginScreen = ({navigation}) => {
         </View>
     )
 };
+
+export default LoginScreen;

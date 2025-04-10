@@ -6,7 +6,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const HomeScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <Icon name="arrow-back" type='material' onPress={() => navigation.navigate('Login')} containerStyle={styles.backIcon}></Icon>
+            {/*<Icon name="arrow-back" type='material' onPress={() => navigation.navigate('Login')} containerStyle={styles.backIcon}></Icon>*/}
             <Text>Home</Text>
         </View>
     )

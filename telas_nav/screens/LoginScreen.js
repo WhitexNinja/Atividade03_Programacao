@@ -7,7 +7,7 @@ const LoginScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <Text>Tela de Login</Text>
-            <Button type='solid' title={'Home'} buttonStyle={{backgroundColor: 'dodgerblue', padding: 10}} onPress={() => navigation.navigate('Home')}></Button>
+            <Button type='solid' title={'Home'} buttonStyle={{backgroundColor: 'dodgerblue', padding: 10, marginTop: 20}} onPress={() => navigation.navigate('Home')}></Button>
         </View>
     )
 };

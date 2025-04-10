@@ -5,10 +5,18 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const HomeScreen = ({navigation}) => {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Home</Text>
         </View>
     )
 };
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    }
+})
 
 export default HomeScreen;

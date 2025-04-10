@@ -5,11 +5,18 @@ import { Button } from 'react-native-elements';
 
 const LoginScreen = ({navigation}) => {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Tela de Login</Text>
-            <Button type='solid' title={'Home'} style={{backgroundColor: 'dodgerblue'}} onPress={() => navigation.navigate('Home')}></Button>
+            <Button type='solid' title={'Home'} buttonStyle={{backgroundColor: 'dodgerblue', padding: 10}} onPress={() => navigation.navigate('Home')}></Button>
         </View>
     )
 };
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    }})
 
 export default LoginScreen;

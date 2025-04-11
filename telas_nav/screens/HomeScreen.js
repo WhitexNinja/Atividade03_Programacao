@@ -33,7 +33,6 @@ const HomeScreen = ({navigation}) => {
 
     return (
         <View style={styles.container}>
-            <Text style={{ fontSize: 20, margin: 10 }}>Tela Home</Text>
             {/*<Icon name="arrow-back" type='material' onPress={() => navigation.navigate('Login')} containerStyle={styles.backIcon}></Icon>*/}
             <FlatList style={{ flex: 1, width: '100%'}} contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 24 }} data={contatos} keyExtractor={(item) => item.id} renderItem={({item}) => (
                 //<Text style={{ fontSize: 18, padding: 10 }}>{item.nome}</Text>

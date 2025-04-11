@@ -3,22 +3,22 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 const ContactCard = ({ contato, onPress }) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.card}>
-      <Text style={styles.name}>{contato.nome}</Text>
+    <TouchableOpacity onPress={onPress} style={styles.cartao}>
+      <Text style={styles.nome}>{contato.nome}</Text>
       <Text style={styles.email}>{contato.email}</Text>
-      <Text style={styles.phone}>{contato.telefone}</Text>
+      <Text style={styles.telefone}>{contato.telefone}</Text>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
-  card: {
+  cartao: {
     backgroundColor: '#eee',
     padding: 16,
     marginVertical: 8,
     borderRadius: 8,
   },
-  name: {
+  nome: {
     fontWeight: 'bold',
     fontSize: 16,
   },
@@ -26,8 +26,10 @@ const styles = StyleSheet.create({
     color: '#666',
     fontSize: 14,
   },
-  phone: {
+  telefone: {
     color: '#555',
     fontSize: 14,
   },
 });
+
+export default ContactCard;

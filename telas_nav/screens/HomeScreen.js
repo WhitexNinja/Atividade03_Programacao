@@ -1,6 +1,5 @@
 import React from 'react';
 import { Icon } from 'react-native-elements';
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import ContactCard from '../components/ContactCard';
 
@@ -34,8 +33,10 @@ const HomeScreen = ({navigation}) => {
 
     return (
         <View style={styles.container}>
+            <Text style={{ fontSize: 20, margin: 10 }}>Tela Home</Text>
             {/*<Icon name="arrow-back" type='material' onPress={() => navigation.navigate('Login')} containerStyle={styles.backIcon}></Icon>*/}
-            <FlatList data={contatos} keyExtractor={(item) => item.id} renderItem={({item}) => (
+            <FlatList style={{ flex: 1, width: '100%'}} contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 24 }} data={contatos} keyExtractor={(item) => item.id} renderItem={({item}) => (
+                //<Text style={{ fontSize: 18, padding: 10 }}>{item.nome}</Text>
                 <ContactCard contato={item} onPress={() => handlePress(item)}/>
             )}
             />
@@ -46,16 +47,11 @@ const HomeScreen = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        width: '100$%',
+        padding: 16,
+        backgroundColor: '#fff',
     },
 
-    backIcon: {
-        position: 'absolute',
-        top: 40,
-        left: 20,
-        zIndex: 1,
-    }
 })
 
 export default HomeScreen;

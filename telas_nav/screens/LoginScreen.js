@@ -17,7 +17,7 @@ const LoginScreen = ({navigation}) => {
             <TextInput style={styles.input}></TextInput>
             <Text>Senha</Text>
             <TextInput style={styles.input}></TextInput>
-            <Button type='solid' title={'Login'} buttonStyle={{backgroundColor: 'dodgerblue', padding: 10, marginTop: 20}} onPress={() => navigation.navigate('Home')}></Button>
+            <Button type='solid' title={'Login'} buttonStyle={{backgroundColor: 'blue', padding: 10, marginTop: 20}} onPress={() => navigation.navigate('Home')}></Button>
             <Button type='solid' title={'Cadastre-se'} buttonStyle={{backgroundColor: 'darkgreen', padding: 10, marginTop: 20}} onPress={() => navigation.navigate('Usuário')}></Button>
         </View>
     )

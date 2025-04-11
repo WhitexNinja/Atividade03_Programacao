@@ -13,10 +13,10 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Login' screenOptions={{ headerShown: true }}>
+      <Stack.Navigator initialRouteName='Login' screenOptions={{  headerStyle:{backgroundColor: 'blue'}, headerTintColor:'white', headerShown: true }}>
         <Stack.Screen name='Login' component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name='Home' component={HomeScreen} options={{ headerTitleAlign: 'center' }} />
-        <Stack.Screen name='Usuario' component={UserRegisterScreen} options={{ headerTitleAlign: 'center' }} />
+        <Stack.Screen name='Usuário' component={UserRegisterScreen} options={{ headerTitleAlign: 'center' }} />
         <Stack.Screen name='Contato' component={ContactRegisterScreen} options={{ headerTitleAlign: 'center' }} />
         <Stack.Screen name='Alteracao' component={ContactAlterationScreen} options={{ headerTitleAlign: 'center' }} />
       </Stack.Navigator>

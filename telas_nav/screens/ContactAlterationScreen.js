@@ -32,8 +32,8 @@ const ContactAlterationScreen = ({route}) => {
             <TextInput style={styles.input} value={email} onChangeText={setEmail}></TextInput>
             <Text>Telefone</Text>
             <TextInput style={styles.input} value={telefone} onChange={setTelefone}></TextInput>
-            <Button type='solid' title={'Alterar'} buttonStyle={{backgroundColor: 'blue', padding: 10, marginTop: 20}}></Button>
-            <Button type='solid' title={'Excluir'} buttonStyle={{backgroundColor: 'darkgreen', padding: 10, marginTop: 20}}></Button>
+            <Button type='solid' title={'Alterar'} buttonStyle={{backgroundColor: 'blue', padding: 10, marginTop: 20, width: '100%'}}></Button>
+            <Button type='solid' title={'Excluir'} buttonStyle={{backgroundColor: 'darkgreen', padding: 10, marginTop: 20, width:'100%'}}></Button>
         </View>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { Icon } from 'react-native-elements';
 
 import LoginScreen from './screens/LoginScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -15,7 +16,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Login' screenOptions={{  headerStyle:{backgroundColor: 'blue'}, headerTintColor:'white', headerShown: true }}>
         <Stack.Screen name='Login' component={LoginScreen} options={{ headerShown: false }} />
-        <Stack.Screen name='Home' component={HomeScreen} options={{ headerTitleAlign: 'center' }} />
+        <Stack.Screen name='Home' component={HomeScreen} options={({navigation}) => ({headerTitleAlign: 'center', headerRight: () => (<Icon name='add' type='material' color='white' containerStyle={{marginRight: 15}} onPress={() => navigation.navigate('Contato')}/>)})} />
         <Stack.Screen name='Usuário' component={UserRegisterScreen} options={{ headerTitleAlign: 'center' }} />
         <Stack.Screen name='Contato' component={ContactRegisterScreen} options={{ headerTitleAlign: 'center' }} />
         <Stack.Screen name='Alteracao' component={ContactAlterationScreen} options={{ headerTitleAlign: 'center' }} />

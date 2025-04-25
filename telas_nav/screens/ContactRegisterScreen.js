@@ -2,20 +2,32 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 import { Button } from 'react-native-elements';
 
-const ContactRegisterScreen = ({navigation}) => {
-        return (
-            <View style={styles.container}>
-                <Text>Nome</Text>
-                <TextInput style={styles.input}></TextInput>
-                <Text>Email</Text>
-                <TextInput style={styles.input}></TextInput>
-                <Text>Telefone</Text>
-                <TextInput style={styles.input}></TextInput>
-                <Button type='solid' title={'Salvar'} buttonStyle={{backgroundColor: 'blue', padding: 10, marginTop: 20}}></Button>
-            </View>
-        )
-    
-    }
+const ContactRegisterScreen = ({navigation, adicionarContato}) => {
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [telefone, setTelefone] = useState('');
+
+    const handleSave = () => {
+        if (nome && email && telefone) {
+            adicionarContato(nome, email, telefone);
+        }else{
+            alert('Preencha todos os campos');
+        }
+    };
+
+    return (
+        <View style={styles.container}>
+            <Text>Nome</Text>
+            <TextInput style={styles.input} value={nome} onChangeText={setNome}></TextInput>
+            <Text>Email</Text>
+            <TextInput style={styles.input} value={email} onChangeText={setEmail}></TextInput>
+            <Text>Telefone</Text>
+            <TextInput style={styles.input} value={telefone} onChangeText={setTelefone}></TextInput>
+            <Button type='solid' title={'Salvar'} buttonStyle={{backgroundColor: 'blue', padding: 10, marginTop: 20}} onPress={handleSave}></Button>
+        </View>
+    )
+
+}
     
 
 const styles = StyleSheet.create({

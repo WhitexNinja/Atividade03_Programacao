@@ -26,7 +26,8 @@ const contatos = [
     },
 ];
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({navigation, contatos}) => {
+
     const handlePress = (contato) => {
         navigation.navigate('Alteracao', {contato})
     };

@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { Button } from 'react-native-elements';
 
 const ContactAlterationScreen = ({route}) => {
@@ -31,7 +31,7 @@ const ContactAlterationScreen = ({route}) => {
             <Text>Email</Text>
             <TextInput style={styles.input} value={email} onChangeText={setEmail}></TextInput>
             <Text>Telefone</Text>
-            <TextInput style={styles.input} value={telefone} onChange={setTelefone}></TextInput>
+            <TextInput style={styles.input} value={telefone} onChangeText={setTelefone}></TextInput>
             <Button type='solid' title={'Alterar'} buttonStyle={{backgroundColor: 'blue', padding: 10, marginTop: 20, width: '100%'}}></Button>
             <Button type='solid' title={'Excluir'} buttonStyle={{backgroundColor: 'darkgreen', padding: 10, marginTop: 20, width:'100%'}}></Button>
         </View>

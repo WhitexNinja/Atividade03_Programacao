@@ -1,7 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
-import { Button, Avatar } from 'react-native-elements';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { Avatar, Button } from 'react-native-elements';
 
 const LoginScreen = ({navigation}) => {
     return (
@@ -33,6 +32,7 @@ const styles = StyleSheet.create({
     input:{
         borderColor: 'black',
         borderWidth: 2,
+        width: 250,
     }
 
 },

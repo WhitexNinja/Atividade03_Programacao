@@ -1,30 +1,6 @@
 import React from 'react';
-import { Icon } from 'react-native-elements';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { FlatList, StyleSheet, View } from 'react-native';
 import ContactCard from '../components/ContactCard';
-
-const contatos = [
-    {
-        id: '1',
-        nome: 'Marcos Andrade',
-        email: 'marcos.andrade@gmail.com',
-        telefone: '81988553424'
-    },
-
-    {
-        id: '2',
-        nome: 'Patrícia Tavares',
-        email: 'patricia.tavares@gmail.com',
-        telefone: '81998765332'
-    },
-
-    {
-        id: '3',
-        nome: 'Rodrigo Antunes',
-        email: 'rodrigo.antunes@gmail.com',
-        telefone: '81987765525'
-    },
-];
 
 const HomeScreen = ({navigation, contatos}) => {
 
@@ -47,7 +23,7 @@ const HomeScreen = ({navigation, contatos}) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        width: '100$%',
+        width: '100%',
         padding: 16,
         backgroundColor: '#fff',
     },

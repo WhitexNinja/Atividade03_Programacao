@@ -1,0 +1,23 @@
+{
+    "contatos": [
+      {
+        "id": 1,
+        "nome": "Marcos Andrade",
+        "email": "marcos.andrade@gmail.com",
+        "telefone": "81988553424"
+      },
+      {
+        "id": 2,
+        "nome": "Patrícia Tavares",
+        "email": "patricia.tavares@gmail.com",
+        "telefone": "81998765332"
+      },
+      {
+        "id": 3,
+        "nome": "Rodrigo Antunes",
+        "email": "rodrigo.antunes@gmail.com",
+        "telefone": "81987765525"
+      }
+    ]
+  }
+  

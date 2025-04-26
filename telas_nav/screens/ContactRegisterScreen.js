@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { Button } from 'react-native-elements';
+import api from '../services/api';
 
-const ContactRegisterScreen = ({navigation, adicionarContato}) => {
+const ContactRegisterScreen = ({navigation}) => {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [telefone, setTelefone] = useState('');
 
-    const handleSave = () => {
+    const handleSave = async () => {
         if (nome && email && telefone) {
-            adicionarContato(nome, email, telefone);
+            try {
+                await api.post('/contatos', {nome, email, telefone});
+                navigation.goBack();
+            }catch (error){
+                console.error('Erro ao salvar contato', error);
+            }
         }else{
             alert('Preencha todos os campos');
         }

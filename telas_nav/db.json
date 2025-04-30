@@ -1,23 +1,45 @@
 {
-    "contatos": [
-      {
-        "id": 1,
-        "nome": "Marcos Andrade",
-        "email": "marcos.andrade@gmail.com",
-        "telefone": "81988553424"
-      },
-      {
-        "id": 2,
-        "nome": "Patrícia Tavares",
-        "email": "patricia.tavares@gmail.com",
-        "telefone": "81998765332"
-      },
-      {
-        "id": 3,
-        "nome": "Rodrigo Antunes",
-        "email": "rodrigo.antunes@gmail.com",
-        "telefone": "81987765525"
-      }
-    ]
-  }
-  
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "Marcos Andrade",
+      "email": "marcos.andrade@gmail.com",
+      "telefone": "81988553424"
+    },
+    {
+      "nome": "Patrícia Tavares",
+      "email": "patricia.tavares@gmail.com",
+      "telefone": "81998765332",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nome": "Rodrigo Antunes",
+      "email": "rodrigo.antunes@gmail.com",
+      "telefone": "81987765525"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "9b74",
+      "nome": "teste",
+      "cpf": "12345678901",
+      "email": "teste@gmail.com",
+      "senha": "hadouken"
+    },
+    {
+      "id": "50d5",
+      "nome": "teste2",
+      "cpf": "09876543211",
+      "email": "teste2@gmail.com",
+      "senha": "shoryuken"
+    },
+    {
+      "id": "3d45",
+      "nome": "teste3",
+      "cpf": "1258741257",
+      "email": "teste3@uol.com.br",
+      "senha": "teste3teste3"
+    }
+  ]
+}
